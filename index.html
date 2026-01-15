@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigadas de Limpieza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado con emojis de limpieza -->
+    <div class="emoji-background">
+        <span class="emoji-float">🧹</span>
+        <span class="emoji-float">🪣</span>
+        <span class="emoji-float">🧽</span>
+        <span class="emoji-float">🧴</span>
+        <span class="emoji-float">✨</span>
+        <span class="emoji-float">🧤</span>
+        <span class="emoji-float">🫧</span>
+        <span class="emoji-float">🍳</span>
+        <span class="emoji-float">🧹</span>
+        <span class="emoji-float">🧽</span>
+        <span class="emoji-float">✨</span>
+        <span class="emoji-float">🪣</span>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Brigadas de Limpieza</h1>
+            <p class="subtitle">Turnos semanales de limpieza</p>
+        </header>
+
+        <main>
+            <section class="current-week">
+                <h2>Esta semana</h2>
+                <div class="week-info">
+                    <span class="week-number" id="currentWeekNumber"></span>
+                    <div class="brigade-display">
+                        <span class="brigade-label">Le toca a:</span>
+                        <span class="brigade-name" id="currentBrigade"></span>
+                    </div>
+                    <span class="date-range" id="currentDateRange"></span>
+                    <div class="members-list" id="currentMembers">
+                        <!-- Integrantes de la brigada actual -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="calendar">
+                <h2>Pr&oacute;ximas semanas</h2>
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Se genera din&aacute;micamente -->
+                </div>
+            </section>
+
+            <section class="all-members">
+                <button class="toggle-members-btn" id="toggleMembersBtn">
+                    Ver todos los miembros
+                </button>
+                <div class="all-members-grid" id="allMembersGrid" style="display: none;">
+                    <!-- Se genera din&aacute;micamente -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Rotaci&oacute;n autom&aacute;tica por semana del a&ntilde;o</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
